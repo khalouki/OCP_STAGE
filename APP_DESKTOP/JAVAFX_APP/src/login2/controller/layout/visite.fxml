@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="table_visite" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="834.0" style="-fx-background-color: white;" stylesheets="@../../css/Login2.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login2.controller.VisiteController">
+   <children>
+      <TableView fx:id="table_des" layoutX="34.0" layoutY="138.0" prefHeight="453.0" prefWidth="767.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="203.0" resizable="false" text="Nom" />
+          <TableColumn fx:id="emplacement" minWidth="0.0" prefWidth="196.0" resizable="false" text="emplacement" />
+            <TableColumn fx:id="date_v" prefWidth="192.0" resizable="false" text="la date visite" />
+            <TableColumn fx:id="desc" prefWidth="174.0" text="description" />
+            <TableColumn fx:id="id" prefWidth="49.0" resizable="false" text="id" visible="false" />
+        </columns>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.3778626024723053" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TableView>
+      <Label fx:id="txt" layoutX="310.0" layoutY="42.0" prefHeight="43.0" prefWidth="215.0" text=" Table des visites">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

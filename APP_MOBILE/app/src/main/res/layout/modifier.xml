@@ -1,0 +1,76 @@
+<!-- dialog_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Nom"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Prenom"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Gmail"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="telephone"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

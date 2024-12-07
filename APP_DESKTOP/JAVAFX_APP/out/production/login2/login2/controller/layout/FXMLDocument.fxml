@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="894.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login2.controller.FXMLDocumentController">
+   <children>
+      <Pane fx:id="logo" layoutX="-4.0" layoutY="-1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="565.0" prefWidth="407.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="469.0" fitWidth="242.0" layoutX="96.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/OCP%20Logo%20PNG%20Vector%20(SVG)%20Free%20Download.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <StackPane layoutX="403.0" prefHeight="565.0" prefWidth="491.0">
+         <children>
+            <Pane fx:id="con" prefHeight="200.0" prefWidth="200.0" style="visibility: visible;">
+               <children>
+                  <Label layoutX="107.0" layoutY="97.0" prefHeight="34.0" prefWidth="177.0" text="Se connecter">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gmail" layoutX="107.0" layoutY="167.0" prefHeight="40.0" prefWidth="299.0" promptText="Gmail" />
+                  <PasswordField fx:id="password" layoutX="107.0" layoutY="256.0" prefHeight="40.0" prefWidth="299.0" promptText="Password" />
+                  <Button layoutX="278.0" layoutY="333.0" mnemonicParsing="false" onAction="#connection" prefHeight="32.0" prefWidth="131.0" style="-fx-background-color: #578df2; -fx-cursor: hand;" text="Connection" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="107.0" layoutY="334.0" onMouseClicked="#test" prefHeight="32.0" prefWidth="165.0" text="Mot de pass oubler ??" textFill="#1e1eee">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="95.0" layoutY="451.0" prefHeight="51.0" prefWidth="327.0" style="-fx-background-color: #80008047; -fx-padding: 13px; -fx-border-color: black;">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="211.0" text="Tu a déja un compte ??">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#sign" prefHeight="25.0" prefWidth="157.0" text="Créé neauveaux" textFill="#1226e3">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <FontAwesomeIcon glyphName="USER" layoutX="77.0" layoutY="195.0" size="2em" />
+                  <FontAwesomeIcon glyphName="LOCK" layoutX="77.0" layoutY="284.0" size="2em" />
+               </children>
+            </Pane>
+            <Pane fx:id="log" prefHeight="200.0" prefWidth="200.0" style="visibility: hidden;">
+               <children>
+                  <Label layoutX="167.0" layoutY="71.0" prefHeight="27.0" prefWidth="199.0" text="Créé nouveau compte">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nom" layoutX="97.0" layoutY="151.0" prefHeight="40.0" prefWidth="338.0" promptText="Nom" />
+                  <TextField fx:id="prenom" layoutX="97.0" layoutY="233.0" prefHeight="40.0" prefWidth="338.0" promptText="Prenom" />
+                  <TextField fx:id="gm" layoutX="97.0" layoutY="309.0" prefHeight="40.0" prefWidth="338.0" promptText="Gmail" />
+                  <TextField fx:id="pass" layoutX="97.0" layoutY="390.0" prefHeight="40.0" prefWidth="338.0" promptText="Mot de pass" />
+                  <Button layoutX="188.0" layoutY="480.0" mnemonicParsing="false" onAction="#save_in_database" prefHeight="34.0" prefWidth="177.0" style="-fx-background-color: green;" text="enrigistrer" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="26.0" layoutY="20.0" onMouseClicked="#retour" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/images.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </children>
+      </StackPane>
+    
+   </children>
+</AnchorPane>

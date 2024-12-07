@@ -1,0 +1,117 @@
+.pane{
+    -fx-background-color: white;    
+}
+
+#users{
+    -fx-background-color: black;
+}
+.login{
+    -fx-background-color: linear-gradient(to right,#42175b,#3713a1);
+    -fx-background-radius: 15px;
+}
+.login:hover{
+     -fx-background-color: linear-gradient(to right,#3713a1,#42175b);
+}
+.textfield{
+    -fx-background-color: transparent;
+    -fx-border-color:#42175b;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+.passfeild{
+    -fx-background-color: transparent;
+    -fx-border-color:#42175b;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+.ajt{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),3,0,0,0);
+}
+.left{
+    
+    -fx-background-color: linear-gradient(to right,#42175b,#3713a1);
+}
+
+.titlebar{
+    -fx-background-color:linear-gradient(to right,#42175b,#3713a1);
+}
+.import{
+    /*-fx-background-color: linear-gradient(to right,#42175b,#3713a1);*/
+    -fx-background-color: orange;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),6,0,0,0);
+    -fx-background-radius:11px;
+
+}
+.update{
+    -fx-background-color: green;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),6,0,0,0);
+    -fx-background-radius:11px;
+}
+.add{
+    -fx-background-color: pink;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),6,0,0,0);
+    -fx-background-radius:11px;
+}
+.remove{
+    -fx-background-color: red;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),6,0,0,0);
+    -fx-background-radius:11px;
+}
+.modify{
+    -fx-background-color: #d2da33;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),6,0,0,0);
+    -fx-background-radius:11px;
+}
+.menubtn{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+    -fx-alignment:center-left;
+    
+}
+.menubtn:hover{
+    -fx-background-color:red;
+}
+
+.username{
+    -fx-alignment:CENTER;
+    -fx-font-size:21px;
+    
+   }
+   .table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {   
+    -fx-background-color: blueviolet;
+    -fx-stroke: transparent;
+    -fx-size:35;
+    -fx-alignment: CENTER ;    
+    -fx-text-alignment: center;
+
+}
+.table-row-cell:filled:hover {
+
+    -fx-size:50;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+
+}
+.table-view:row-selection {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-fixed-cell-size: 50;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+}
+
+.table-view .table-column{
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER 
+
+}
+   /* Style the table view */
+
+
+/*
+.import:hover{
+     -fx-background-color: linear-gradient(to right,#3713a1,#42175b);
+}
+  */  

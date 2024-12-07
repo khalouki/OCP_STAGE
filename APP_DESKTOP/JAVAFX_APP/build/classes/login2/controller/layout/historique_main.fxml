@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="834.0" style="-fx-background-color: white;" stylesheets="@../../css/Login2.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login2.controller.Historique_mainController">
+   <children>
+      <TableView fx:id="table_histo" focusTraversable="false" layoutX="54.0" layoutY="123.0" prefHeight="468.0" prefWidth="727.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="174.0" text="Nom" />
+          <TableColumn fx:id="zone" prefWidth="199.0" text="Emplacement" />
+            <TableColumn fx:id="des" editable="false" prefWidth="186.0" text="description" />
+            <TableColumn fx:id="date_d" prefWidth="166.0" text="date demande" />
+            <TableColumn fx:id="id" minWidth="1.0" prefWidth="1.0" resizable="false" text="id" visible="false" />
+        </columns>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.3664122223854065" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TableView>
+      <Label layoutX="280.0" layoutY="51.0" prefHeight="36.0" prefWidth="274.0" text="Historique de maintenace">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

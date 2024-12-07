@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login2.controller.DisplayController">
+   <effect>
+      <DropShadow>
+         <color>
+            <Color opacity="0.3320610821247101" />
+         </color>
+      </DropShadow>
+   </effect>
+   <children>
+      <TextArea fx:id="message" editable="false" layoutX="13.0" layoutY="59.0" prefHeight="259.0" prefWidth="578.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextArea>
+      <Label layoutX="241.0" layoutY="14.0" prefHeight="32.0" prefWidth="122.0" text="Demande">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="214.0" layoutY="341.0" mnemonicParsing="false" onAction="#sortie" prefHeight="32.0" prefWidth="176.0" styleClass="ajouter" stylesheets="@../../css/Login2.css" text="Close" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.22519083321094513" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

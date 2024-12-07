@@ -1,0 +1,17 @@
+.panetop{
+   -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),6,0,0,0);
+   -fx-background-radius:11px;
+   -fx-background-color: white;
+}
+image{
+    -fx-background-radius:11px;
+}
+
+.plan_visite{
+     -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),6,0,0,0);
+   -fx-background-radius:11px;
+   -fx-background-color: white;
+}
+.pane{
+    -fx-background-radius: 10rem;
+}
